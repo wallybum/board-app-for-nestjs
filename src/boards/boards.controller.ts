@@ -1,8 +1,12 @@
-import { Controller } from '@nestjs/common';
-import { get } from 'http';
+import { Controller, Get } from '@nestjs/common';
 import { BoardsService } from './boards.service';
 
 @Controller('boards')
 export class BoardsController {
-    constructor(private boardService : BoardsService){}
+    constructor(private boardService: BoardsService) { }
+
+    @Get()
+    getAllBoard() {
+        return this.boardService.getAllBoards();
+    }
 }
