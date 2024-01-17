@@ -8,10 +8,17 @@ npm i -g @nestjs/cli
 nest new project-name
 ```
 
+### 모듈 생성
+아래 명령어를 이용하여 모듈 명과 같은 디렉토리와 모듈명.module.ts 파일이 생성된다.
+```
+    nest g module <모듈 명>
+```
 ### 실행
 개발자모드 실행, 디버그 모드실행은 package.json 파일 참조.
 ```
-nest start 
+npm run start // 실행
+npm run start:dev // 개발 모드 실행
+npm run start:debug // 디버그 모드 실행
 ```
 
 ### Module
