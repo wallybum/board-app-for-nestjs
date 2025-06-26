@@ -1,4 +1,4 @@
-import { DataSource, EntityRepository, Repository } from "typeorm";
+import { EntityRepository, Repository } from "typeorm";
 import { Board } from "./board-entity";
 import { Injectable } from "@nestjs/common";
 
